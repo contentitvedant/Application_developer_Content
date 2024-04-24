@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ojuju:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Raleway", sans-serif;
+  line-height: 150%;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 20px;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+.logo-container {
+  float: left;
+  margin-right: 20px;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  margin-left: 100px;
+  border-right: 1px solid white;
+  padding: 20px;
+}
+
+.website-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f4eeee;
+  padding: 55px;
+  margin-left: 900px;
+  border-top: 2px solid rgb(227, 227, 227);
+  border-bottom: 2px solid rgb(227, 227, 227);
+}
+
+h2 {
+  text-indent: 50px;
+  padding: auto;
+  background-color: rgb(17, 14, 15);
+  color: #f4eeee;
+}
+.article-1 {
+  background-color: #d5d1d1;
+  text-align: center;
+}

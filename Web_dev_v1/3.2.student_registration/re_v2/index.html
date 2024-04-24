@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <form method="get" action="./successful.html" target="">
+      <hr />
+      <!-- --------------------------------------------------------------------- -->
+
+      <h1>Student Registeration</h1>
+      <br />
+      <!-- <label>Username</label> -->
+      <br />
+      <input type="text" name="uname" placeholder="username" />
+      <hr />
+
+      <!-- <label>Mobile No.</label> -->
+      <input type="number" name="contact" placeholder="Enter mobile number" />
+      <hr />
+      <!-- ---------------------------------------------------------------- -->
+      <!-- <label>Password</label> -->
+      <br />
+      <input type="password" name="password" placeholder="password" />
+      <hr />
+      <!-- =--------------------------------------------------- -->
+      <!-- <label>Email</label> -->
+      <br />
+      <input type="email" name="email" placeholder="email" />
+      <hr />
+
+      <!-- checkbox -->
+      <label>PH.d:-</label>
+      <input type="checkbox" name="PHD" />
+      <label>Diploma:-</label>
+      <input type="checkbox" name="DIPLOMA" />
+      <label for="hsc">Degree:-</label>
+      <input type="checkbox" name="DEGREE" />
+      <hr />
+
+      <!-- radiobox -->
+      <label>Gender:</label>
+      <input type="radio" name="Age" />
+      <label>Male</label>
+      <input type="radio" name="Age" />
+      <label>Female</label>
+      <input type="radio" name="Age" />
+      <label>Other</label>
+      <hr />
+
+      <label> Address :</label>
+      <br />
+      <textarea name="Address" cols="50" required></textarea>
+      <hr />
+      <br />
+
+      <label>Select Date </label>
+      <br />
+      <input type="date" />
+
+      <hr />
+      <label>Courses </label>
+      <br />
+      <select name="Courses">
+        <option value="FSD">Full Stack Developer</option>
+        <option value="DSA">Data Software Engineering</option>
+        <option value="DA">Data Analytics</option>
+      </select>
+      <hr />
+
+      <label>Select your Hobby in Sports :- </label>
+      <br />
+      <input list="sports" name="sport" />
+      <datalist id="sports">
+        <option value="cricket"></option>
+        <option value="hockey"></option>
+        <option value="tennis"></option>
+        <option value="badminton"></option>
+        <option value="volleyball"></option>
+        <option value="Baseball"></option>
+        <option value="Football"></option>
+      </datalist>
+      <br />
+      <hr />
+      <button type="submit" class="registerButton">register</button>
+    </form>
+  </body>
+</html>

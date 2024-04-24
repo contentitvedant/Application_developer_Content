@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-image: url("https://images.pexels.com/photos/4087571/pexels-photo-4087571.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  border: 2px solid black;
+  color: white;
+  background-color: black;
+  border-radius: 30px;
+}
+
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #faf8f8;
+  border-radius: 8px;
+  color: rgb(15, 14, 14);
+}
+
+label {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+}
+input[type="date"] {
+  width: 50%;
+  text-align: center;
+  height: 30px;
+  border-radius: 50px;
+  margin-left: 6px;
+}
+datalist {
+  width: 100vw;
+  height: 80px;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+button {
+  width: 50%;
+  background-color: rgb(253, 248, 248);
+  color: rgb(224, 219, 219);
+  height: 2rem;
+  background-color: black;
+  border-radius: 10px;
+  font-size: large;
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: auto;
+}

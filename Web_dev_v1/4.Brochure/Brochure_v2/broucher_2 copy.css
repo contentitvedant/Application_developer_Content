@@ -1,0 +1,93 @@
+header {
+  background-color: transparent;
+  padding: 30px;
+  background-image: url("./ITV_logo.png");
+  background-size: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navLogo {
+  margin-left: 14px;
+}
+
+.contentHeading{
+  text-align: center;
+  margin: 20px;
+  background-color: #b9d719;
+  color: white;
+  padding: 10px;
+  position: sticky;
+
+}
+
+section {
+  display: inline-block;
+  width: 25%;
+  height: 300px;
+  border: 1px solid #c8cacc;
+  margin: 40px;
+  padding: 10px;
+  text-align: center;
+  background: linear-gradient(0deg, #ebebea 0%, #f2f3ee 100%);
+
+  img {
+    margin: 5px;
+    padding: 20px;
+    border-radius: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 5px 3px rgb(3, 3, 3);
+  }
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+.card {
+  padding: 30px;
+  border: 2px solid rgb(230, 224, 224);
+  height: 80vh;
+  background-color: #cfd6d6;
+  color: rgb(37, 36, 36);
+}
+
+.img1 {
+  float: right;
+  margin-right: 10vh;
+  margin-left: 10vh;
+}
+
+.course-info {
+  padding: 20px;
+  font-size: 25px;
+}
+.course-heading {
+  font-size: 35px;
+  text-decoration: underline;
+  margin-left: 30px;
+}
+
+nav{
+  position: sticky;
+  top: 0%;
+}
+
+.whatsapp{
+  width: 150px;
+  height: 100px;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+}
+.whatsapp:hover {
+  width: 155px;
+  height: 105px;
+  transition: 1s;
+}
+
+section > p::first-letter{
+  /* color: #b9d719; */
+  font: 30px sans-serif;
+}
+
+
+
