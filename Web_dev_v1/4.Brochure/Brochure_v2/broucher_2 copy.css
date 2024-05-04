@@ -78,16 +78,8 @@ nav{
   bottom: 10px;
   right: 20px;
 }
-.whatsapp:hover {
-  width: 155px;
-  height: 105px;
-  transition: 1s;
-}
 
-section > p::first-letter{
-  /* color: #b9d719; */
-  font: 30px sans-serif;
-}
+
 
 
 

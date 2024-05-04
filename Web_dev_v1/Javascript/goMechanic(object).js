@@ -12,6 +12,9 @@ function createCar(make, model, year) {
     addTask(task) {
       this.tasks.push(task);
     },
+           
+          
+
 
     // Method to list all maintenance tasks
     listTasks() {
