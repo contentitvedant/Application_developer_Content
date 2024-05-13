@@ -17,76 +17,20 @@ let RTORecords = {
       DRUNK_DRIVING: 2000,
     },
   },
-  // Add more preexisting data here if needed,
+  
 };
 
-//concept applied computed properties and short hand properties 
-// function addNewVehicle() {
-//   console.log("Enter details of the new vehicle:");
-//   const numberPlate = readlineSync.question("Number Plate: ");
-//   // Check if the number plate already exists in the records
-//   //also applied the object property which return booleans by checking the property exists or not
-//   if (RTORecords.hasOwnProperty(numberPlate)) {
-//     console.log(
-//       "vehicle already exist ! "
-//     );
-//     return; // Return without modifying records object
-//   }
-//   const vehicleName = readlineSync.question("Vehicle Name: ");
-//   const vehicleCompany = readlineSync.question("Vehicle Company: ");
-//   const vehicleColor = readlineSync.question("Vehicle Color: ");
-//   const insuranceNumber = readlineSync.question("Insurance Number: ");
-//   const vehicleOwner = readlineSync.question("Vehicle Owner: ");
-//   const vehicleType = readlineSync.question("Vehicle Type: ");
-
-//   const fine = {};
-//   console.log("Enter fine details for the vehicle (Enter 'done' to finish):");
-//   while (true) {
-//     const violation = readlineSync.question("Violation: ");
-//     if (violation === "done") break;
-//     const fineAmount = parseInt(readlineSync.question("Fine Amount: "));
-//     fine[violation] = fineAmount;
-//   }
-//   RTORecords[numberPlate] = {
-//     vehicleName,
-//     vehicleCompany,
-//     vehicleColor,
-//     InsuranceNumber: insuranceNumber,
-//     vehicleOwner,
-//     vehicleType,
-//     Fine: fine,
-//     details: function () {
-//       console.log(
-//         `This is a ${vehicleColor} ${vehicleCompany} ${vehicleName}.`
-//       );
-//     },
-//   };
-
-//   console.log(`Vehicle with number plate ${numberPlate} added successfully!`);
-
-  
-// }
-
-
-
-
-
-//concept 
-// applied computed properties
-// properties access using . and bracket 
-//
-// Define a function named addNewVehicle
+// concept applied computed properties and short hand properties 
 function addNewVehicle() {
-  // Display a message prompting the user to enter details of the new vehicle
   console.log("Enter details of the new vehicle:");
-  // Prompt the user to enter the number plate of the vehicle
   const numberPlate = readlineSync.question("Number Plate: ");
-  // Check if the number plate already exists in the records using the hasOwnProperty method of the RTORecords object
+  // Check if the number plate already exists in the records
+  //also applied the object property which return booleans by checking the property exists or not
   if (RTORecords.hasOwnProperty(numberPlate)) {
-    // Display a message indicating that the vehicle already exists in the records
-    console.log("Vehicle already exists!");
-    // Return from the function without modifying the records object
-    return;
+    console.log(
+      "vehicle already exist ! "
+    );
+    return; // Return without modifying records object
   }
   const vehicleName = readlineSync.question("Vehicle Name: ");
   const vehicleCompany = readlineSync.question("Vehicle Company: ");
@@ -95,22 +39,14 @@ function addNewVehicle() {
   const vehicleOwner = readlineSync.question("Vehicle Owner: ");
   const vehicleType = readlineSync.question("Vehicle Type: ");
 
-  // Initialize an empty object to store fine details for the vehicle
   const fine = {};
-  // Display a message prompting  to enter fine details for the vehicle, loop until the user enters "done"
   console.log("Enter fine details for the vehicle (Enter 'done' to finish):");
   while (true) {
-    // Prompt the user to enter a violation
     const violation = readlineSync.question("Violation: ");
-    // If the user enters "done", exit the loop
     if (violation === "done") break;
-    // Prompt the user to enter the fine amount for the violation and convert it to an integer
-    const fineAmount = readlineSync.question("Fine Amount: ");
-    // Add the violation and its fine amount to the fine object
+    const fineAmount = parseInt(readlineSync.question("Fine Amount: "));
     fine[violation] = fineAmount;
   }
-  //shorthand properties applied here 
-  // Add the details of the new vehicle to the RTORecords object using the number plate as the key
   RTORecords[numberPlate] = {
     vehicleName,
     vehicleCompany,
@@ -118,16 +54,17 @@ function addNewVehicle() {
     InsuranceNumber: insuranceNumber,
     vehicleOwner,
     vehicleType,
-    Fine: fine, // Include the fine details in the vehicle record
-    details: function () { // Define a method called details to log vehicle details
+    Fine: fine,
+    details: function () {
       console.log(
         `This is a ${vehicleColor} ${vehicleCompany} ${vehicleName}.`
       );
     },
   };
 
-  // Display a success message indicating that the vehicle has been added successfully
   console.log(`Vehicle with number plate ${numberPlate} added successfully!`);
+
+  
 }
 
 
@@ -244,6 +181,8 @@ while (true) {
     console.log("Invalid choice. Please enter a valid option.");
   }
  }
+
+
 
 
 

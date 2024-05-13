@@ -62,9 +62,4 @@ RTORecords[numberPlate] = {
   },
 };
 console.log("the new number plate has been added with there Fines")
-
-
-
-
-
 }
