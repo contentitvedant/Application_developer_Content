@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* universe value */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+/* Root value for reusability  */
+:root {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --main:#C3028F;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Main container  */
+main {
+    width: 100%;
+    height: 100vh;
+    background-image: rgb(0, 0, 0);
+    position: relative;
+    padding: 0.5%;
+}
+
+/* navbar section  */
+nav {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 20px 8%;
+    transition: ease .40s;
+}
+/* space logo  */
+.logo {
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--text-color);
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    padding: 10px 22px;
+    border-radius: 4px;
+    transition: ease-in-out .40s;
+}
+
+.navbar a:hover {
+    color: #b791be;
+}
+
+/* hidden icon  */
+#menu-icon {
+    color: var(--text-color);
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+/* Main page heading  */
+.content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content h1 {
+    font-size: 12.5vw;
+    color: #fff;
+}
+
+.content a {
+    display: inline-block;
+    color: white;
+    font-size: 2vw;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.content a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.dashboard {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* -------------Gird layout part---------------------- */
+section {
+    padding: 60px 8%;
+}
+
+.grid_wrap > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.grid_wrap .box h1 {
+    font-size: 7vw;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.grid_wrap .box p {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+/* for zoomin animation */
+.grid_wrap .box {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+ 
+.grid_wrap img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: ease 0.3s;
+}
+
+.box img:hover{
+    transform: scale(1.1);
+}
+
+.grid_wrap {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    border: 1px solid var(--main);
+    border-radius: 20px;
+    padding: 20px 40px;
+    transition: ease 0.3s;
+}
+
+/* use grid property span for colspan & rolspan   */
+.grid_wrap .big {
+    grid-column: span 2;
+    grid-row: span 2;
+
+}
+.grid_wrap span{
+    color :var(--main);
+}
+
+/* aspect ratio for making background video responsive */
+@media(min-aspect-ratio: 16/9) {
+    .dashboard {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio: 16/9) {
+    .dashboard {
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+/* responsive website */
+@media (max-width: 1400px){
+    nav{
+        padding: 20px 3%;
+        transition: .2s;
+    }
+
+    :root{
+        --big-font: 4.5rem;
+        --h2-font: 2.3rem;
+        --p-font: 1rem;
+        transition: .2s;
+    }
+}
+
+
+@media (max-width: 1040px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 270px;
+        height: 120vh;
+        background: #ffffff11;
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 150px 30px;
+        transition: 0.5s all;
+    }
+    .navbar a{
+        display: block;
+        margin: 1.2rem 0;
+    }
+
+    .navbar a:hover{
+        color:var(--text-color);
+        background: #b791be;
+        border-radius: 20px;
+    }
+    .open{
+        right: 0;
+    }
+
+    .grid_wrap .big {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    .grid_wrap .big h1 {
+        text-align: center;
+
+    }
+
+    .grid_wrap .big p {
+        display: none;
+
+    }
+}
+
+@media (max-width: 525px){
+
+    .grid_wrap .big {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .grid_wrap .big h1 {
+        text-align: center;
+
+    }
+    .grid_wrap .big p {
+        display: block;
+
+    }
+}

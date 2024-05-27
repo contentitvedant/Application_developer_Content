@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+j     <style>
+        body{
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 150px;
+
+        }
+
+        .container, .parent, .child {
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            margin: 20px;
+            padding: 20px;
+        }   
+
+        /* Add hover effect */
+        .container:hover {
+            background-color: rgb(224, 28, 126);
+        }
+         .child:hover {
+            background-color: rgb(42, 106, 128);
+        }
+       .parent:hover {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="parent">
+        <div class="child">
+            Hover over me!
+        </div>
+    </div>
+  </div>
+
+  <script>
+    const container = document.querySelector('.container');
+    const parent = document.querySelector('.parent');
+    const child = document.querySelector('.child');
+
+    container.addEventListener('mouseover', () => {
+        console.log('Container hovered (bubbling phase)');
+    });
+
+    parent.addEventListener('mouseover', () => {
+        console.log('Parent hovered (bubbling phase)');
+    });
+
+    child.addEventListener('mouseover', () => {
+        console.log('Child hovered (bubbling phase)');
+    });
+  </script>
+  
+</body>
+</html>

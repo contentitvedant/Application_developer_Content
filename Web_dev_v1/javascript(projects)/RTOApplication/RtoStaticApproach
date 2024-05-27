@@ -1,0 +1,130 @@
+let RTORecords = {
+  MH058361: {
+    vehicleName: "verna",
+    vehicleCompany: "hyundai",
+    vehicleColor: "red",
+    InsuranceNumber: "4354-9098-8972-0938",
+    vehicleOwner: "roger garero",
+    vehicleType: "LMV",
+    Fine: {
+      NO_HELMET: 500,
+      OVERSPEEDING: 1000,
+      TRAFFIC_VIOLATION: 750,
+      DRIVING_WITHOUT_LICENSE: 1500,
+      DRUNK_DRIVING: 2000,
+    },
+    details:function(){
+      console.log(
+      `${this.vehicleName} is the car name and ${this.vehicleColor} color`
+      )
+    }
+  },
+  MH058362: {
+    vehicleName: "verna",
+    vehicleCompany: "hyundai",
+    vehicleColor: "red",
+    InsuranceNumber: "4354-9098-8972-0938",
+    vehicleOwner: "roger garero",
+    vehicleType: "LMV",
+    Fine: {
+      NO_HELMET: 500,
+      OVERSPEEDING: 1000,
+      TRAFFIC_VIOLATION: 750,
+      DRIVING_WITHOUT_LICENSE: 1500,
+      DRUNK_DRIVING: 2000,
+    },
+  },
+  MH058363: {
+    vehicleName: "verna",
+    vehicleCompany: "hyundai",
+    vehicleColor: "red",
+    InsuranceNumber: "4354-9098-8972-0938",
+    vehicleOwner: "roger garero",
+    vehicleType: "LMV",
+    Fine: {
+      NO_HELMET: 500,
+      OVERSPEEDING: 1000,
+      TRAFFIC_VIOLATION: 750,
+      DRIVING_WITHOUT_LICENSE: 1500,
+      DRUNK_DRIVING: 2000,
+    },
+  },
+};
+
+// -------------------------Acceess the propertys--------------------------
+
+// // access the property 
+// console.log(RTORecords.MH058361)
+
+// //access the property of nested key 
+// console.log(RTORecords.MH058361.Fine)
+
+// //how to access all the keys
+// console.log(Object.keys(RTORecords))
+
+// //how to access all the values 
+// console.log(Object.values(RTORecords))
+
+// //how to access both pair of the objects
+// console.log(Object.entries(RTORecords))
+// ---------------------------------------------------------------------------
+
+
+
+
+
+
+// //how to iterate all the keys from object using loops
+// for (let key in RTORecords) {
+//   if (RTORecords.hasOwnProperty(key)) {
+//       value = RTORecords[key];
+//       console.log(key, value);
+//   }
+// }
+
+// computed property 
+// Computed properties allow you to use the values of expressions as property names of an object.
+// let numberPlate = "MH053636";
+
+// const divisonRecord_1 = {
+//   a:"MH033456",
+//   [numberPlate]: 3,
+// };
+
+// console.log(divisonRecord); 
+
+// const MH053467="not yet Assigned";
+// const MH053468="not yet Assigned";
+// const MH053469="not yet Assigned";
+
+// const divisonRecord_2={
+//   MH053467:MH053467,
+//   MH053468:MH053468,
+//   MH053469:MH053469
+// }
+
+// const divisonRecord_3={
+//   MH053467,
+//  MH053468,
+//   MH053469
+// }
+// console.log(divisonRecord_2)
+// console.log("-----------------------------------------")
+// console.log(divisonRecord_3) 
+// =---------------------------------------------------------
+
+
+
+
+console.log(RTORecords.MH058361.details())
+
+
+
+
+
+
+
+
+
+
+

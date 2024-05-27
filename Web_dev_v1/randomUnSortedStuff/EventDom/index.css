@@ -1,0 +1,23 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+.parent {
+    padding: 20px;
+    background-color: #c0c0f0;
+    border: 1px solid #999;
+}
+
+.child {
+    padding: 10px 20px;
+    background-color: #f0c0c0;
+    border: 1px solid #666;
+    cursor: pointer;
+}

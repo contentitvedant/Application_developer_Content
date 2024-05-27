@@ -1,0 +1,89 @@
+body {
+  background: #000;
+  color: #fff;
+}
+.carousel-item {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* .popular-anime {
+  padding: 30px 15%;
+} */
+/* .cards {
+  height: 300px;
+  overflow: hidden;
+  border: 0;
+} */
+/*         */
+.page-link {
+  margin: 10px auto;
+  background-color: #000;
+  color: #fff;
+}
+
+/*responsive footer */
+
+i {
+  color: #fff;
+  font-size: 2rem;
+}
+.hov {
+  transition: ease-in 0.2s;
+}
+.hov:hover {
+  transform: scale(1.05);
+}
+
+/* ajax styling */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.heading-ud {
+  border: 1px solid rgb(155, 153, 153);
+  padding: 10px;
+  margin: 50px;
+}
+.ud-card {
+  position: relative;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ud-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.ud-card .card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ud-card .card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.ud-card .card-text {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
