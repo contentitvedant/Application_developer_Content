@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- https://fontawesome.com/icons -->
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+    body {
+        background-color: #6e54fa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+
+        box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 30px;
+    }
+
+    h1 {
+        color: #555;
+        text-align: center;
+    }
+    
+    /* main screen  */
+    .screen {
+        width: 600px;
+        height: 200px;
+        margin: 20px 0px;
+        background-color: #fff;
+        border-radius: 10px;
+        color: rgb(8, 8, 72);
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        padding: 20px;
+        box-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.45), inset 5px 5px 9px rgba(94, 104, 121, 0.3);
+    }
+
+    /* Text Section  */
+    .typo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .typo #color {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
+
+    .typo #content {
+        padding: 10px 20px;
+        border-radius: 20px;
+        box-shadow: inset -5px -2px 9px rgba(255, 255, 255, 0.15), inset 5px 2px 9px rgba(94, 104, 121, 0.3);
+        outline: none;
+        border: none;
+        width: 600px;
+    }
+
+    .typo i {
+        font-size: 20px;
+        margin-right: 10px;
+        color: #6e54fa;
+        cursor: pointer;
+    }
+
+    .tools {
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    /* nestdev */
+    .partition {
+        padding: 10px 20px;
+        border-radius: 20px;
+        box-shadow: inset -5px -2px 9px rgba(255, 255, 255, 0.15), inset 5px 2px 9px rgba(94, 104, 121, 0.3);
+
+    }
+
+</style>
+
+<body>
+    <!-- Container -->
+    <div class="container">
+        <div class="main">
+            <h1>StyloSpeak</h1>
+
+            <!-- Text Screen  -->
+            <div class="screen"></div>
+
+            <div class="typo">
+                <!-- Chat Box -->
+                <input type="text" id="content" name="content" onkeyup="data()">
+                <!-- Tools  -->
+                <div class="tools">
+                    <i class="fa-solid fa-bold" id="bold"></i>
+                    <i class="fa-solid fa-volume-high" onclick="speech()"></i>
+
+                    <!-- Nested Tools  -->
+                    <div class="partition">
+                        <i class="fa-solid fa-fill-drip" onclick="bgcolor()"></i>
+                        <input type="color" onclick="bgcolor()" id="color" name="bgcolor" value="white" />
+                    </div>
+                    <div class="partition">
+                        <i class="fa-solid fa-font" onclick="color()">
+                        </i>
+                        <input type="color" id="color" name="color" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    // select input tag by id selector
+    function data() {
+        var data = document.getElementById('content').value;
+        document.getElementsByClassName("screen")[0].innerText = data;
+    }
+
+    // select input tag by class selector
+    function speech() {
+        var speech_data = document.getElementsByClassName("screen")[0].innerText
+        const synth = window.speechSynthesis;
+        const utterThis = new SpeechSynthesisUtterance(speech_data);
+        utterThis.lang = 'es-ES';
+        synth.speak(utterThis);
+    }
+
+    function bold() {
+        let check = document.getElementsByClassName("screen")[0].style.fontWeight;
+        if (check === "bold") {
+            document.getElementsByClassName("screen")[0].style.fontWeight = "lighter";
+        } else {
+            document.getElementsByClassName("screen")[0].style.fontWeight = "bold";
+        }
+    }
+
+
+    //add event listner function 
+    let bold1 = document.getElementById("bold")
+    bold1.addEventListener("click",bold)
+
+
+    // bold1.removeEventListener("click",bold) // remove event listener
+
+    // Select input tag by name
+    function color() {
+        let color = document.getElementsByName("color")[0].value
+        document.getElementsByClassName("screen")[0].style.color = color
+
+    }
+
+    function bgcolor() {
+        let bgcolor = document.getElementsByName("bgcolor")[0].value
+        document.getElementsByClassName("screen")[0].style.backgroundColor = bgcolor
+    }
+
+    
+    
+</script>
+
+</html>
+

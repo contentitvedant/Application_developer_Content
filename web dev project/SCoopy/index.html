@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- use font-awesome  -->
+  <!-- Pixabay -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://itv-contentbucket.s3.ap-south-1.amazonaws.com/Web+Development+Assets/SCoopy/style.css">
+  <title>Ice Web Page</title>
+</head>
+
+<body onload="ad()">
+  <nav>
+    <h1>SCoopy</h1>
+    <ul class="navigation">
+      <li><a href="" class="nav-link">Sundae</a></li>
+      <li><a href="https://itv-contentbucket.s3.ap-south-1.amazonaws.com/Web+Development+Assets/SCoopy/Offer.html" class="nav-link">Offers</a></li>
+      <li><a href="" class="nav-link">Combo</a></li>
+      <li><a href="" class="nav-link">Feedback</a></li>
+    </ul>
+  </nav>
+  <!-- offer section  -->
+  <div class="count-container">
+    <div class="countdown">
+      <span id="hrs">00 </span>
+      <span>:</span>
+      <span id="mins">00</span>
+      <span>:</span>
+      <span id="sec">00</span>
+    </div>
+  </div>
+  <!-- ads -->
+  <div class="ads-position">
+    <div class="ads">
+      <img src="https://itv-contentbucket.s3.ap-south-1.amazonaws.com/Web+Development+Assets/SCoopy/images/Offer.png" alt="">
+      <i class="fa-regular fa-circle-xmark" id="close" onclick="closeAd()"></i>
+    </div>
+  </div>
+
+  <!-- ----Products------  -->
+  <section class="home">
+    <div class="left">
+      <h3>Specification</h3>
+      <p id="ice1" onclick="size()">Screen</p>
+      <p id="ice2" onclick="host()">Location</p>
+      <p id="ice3" onclick="goBack()">previous</p>
+      <p id="ice4" onclick="goforward()">Next</p>
+    </div>
+    <div class="right">
+      <h1>-- Menu --</h1>
+      <div class="grid">
+        <div class="grid-box" id="ice1"><img src="https://itv-contentbucket.s3.ap-south-1.amazonaws.com/Web+Development+Assets/SCoopy/images/sundae1.jpg" alt=""></div>
+        <div class="grid-box" id="ice1"><img src="https://itv-contentbucket.s3.ap-south-1.amazonaws.com/Web+Development+Assets/SCoopy/images/sundae5.jpg" alt=""></div>
+        <div class="grid-box" id="ice2"><img src="https://itv-contentbucket.s3.ap-south-1.amazonaws.com/Web+Development+Assets/SCoopy/images/sundae3.jpg" alt=""></div>
+        <div class="grid-box" id="ice2"><img src="https://itv-contentbucket.s3.ap-south-1.amazonaws.com/Web+Development+Assets/SCoopy/images/sundae9.jpg" alt=""></div>
+      </div>
+    </div>
+  </section>
+  <script src="https://itv-contentbucket.s3.ap-south-1.amazonaws.com/Web+Development+Assets/SCoopy/script.js"></script>
+</body>
+
+</html>

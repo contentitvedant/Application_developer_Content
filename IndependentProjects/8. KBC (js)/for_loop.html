@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        
+// ---------------------------------------------------------------------------
+let ans = "";
+let price = 0; // Initial Price Money
+const lost = "Incorrect Answer!!\n---Better Luck Next time";
+
+console.log(" !! WELCOME TO KBC !!");
+
+for (let i = 1; i < 4; i++) {
+    // Increment the prize money
+    price += 1000 * i;
+
+    // Question set 
+    switch (i) {
+        case 1:
+            ans = prompt("What does not grow on a tree according to a popular Hindi saying?\n [a: Money, b: Flower, c: Leaves, d: Fruits] : ");
+            
+            console.log(ans == 'a' ? "Correct Answer! Your Prize Money is : ₹" + price : lost);
+
+            break;
+        case 2:
+            ans = prompt("Which city is known as the Pink City in India?\n [a: Bangalore, b: Mysore, c: Jaipur, d: Kochi] : ");
+            
+            console.log(ans == 'c' ? "Correct Answer! Your Prize Money is : ₹" + price : lost);
+
+            break;
+        case 3:
+            ans = prompt("How many states are there in India?\n [a: 28, b: 29, c: 31, d: 30] : ");
+            
+            console.log(ans == 'a' ? "Correct Answer! Your Prize Money is : ₹" + price + "\n---------Congratulations! You Won The KBC---------" : lost);
+        
+            break;
+    }
+}
+
+    </script>
+</body>
+
+</html>

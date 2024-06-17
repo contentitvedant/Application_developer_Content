@@ -24,8 +24,9 @@ let RTORecords = {
       DRUNK_DRIVING: 2000,
     },
   },
-  
+   
 };
+
 
 //concept 
 // applied computed properties

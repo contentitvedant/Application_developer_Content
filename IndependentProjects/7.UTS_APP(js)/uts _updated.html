@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<!-- UTS application -->
+
+
+<!-- simple If else -->
+<!-- 
+//true = already registered and false = not registered
+
+let user_register=false;
+if (user_register==true){
+    console.log("Please log in");
+}
+else{
+    console.log("Please create account");
+ }
+
+-----------------------------------------------------------------------------------------------------------------
+// netsed if else
+
+//UTS application
+//mode of ticket
+
+let user_register=1;
+let mode = "paperless";
+let source = "THANE";
+let destination="MUMBAI";
+if (source != null && destination != null){
+    //select ticket mode
+    if (mode=="paper"){
+        document.write("Paper ticket selected");
+    }
+    else if (mode == "paperless"){
+        document.write("Paperless  ticket selected");
+    }
+    else{
+        document.write("default");
+    }
+}
+else{
+    if (source == null){
+        document.write("Enter source details");
+    }
+    if (destination == null){
+        document.write("Enter destination details");
+    }
+}
+
+
+
+--------------------------------------------------------------------------------------------
+ 
+
+
+ nested with or operator 
+ //UTS application
+
+//mode of ticket
+
+let user_register=1;
+let mode = "paprless" 
+let source = "THANE";
+let destination = "KURLA"
+if (source != null && destination != null){
+    //select ticket mode
+    if (mode=="paper" || mode == "paperless"){
+        document.write("selected mode:"+ mode);
+    }
+    else{
+        document.write("default");
+    }
+}
+else{
+    if (source == null){
+        document.write("Enter source details");
+    }
+    if (destination == null){
+        document.write("Enter destination details");
+    }
+}
+
+
+
+---------------------------------------------------------------------------------------------------
+// nested if else using ternary operator
+//UTS application
+
+//mode of ticket
+
+let user_register=1;
+let mode = "paper" ;
+let source = "THANE";
+let destination = "KURLA";
+if (source != null && destination != null){
+    let ticket = mode=="paper"|| mode=="paperless"?"selected mode:"+ mode:"default"
+    document.write(ticket)
+    
+}
+else{
+    if (source == null){
+        document.write("Enter source details");
+    }
+    if (destination == null){
+        document.write("Enter destination details");
+    }
+}
+
+
+
+-------------------------------------------------------------------------------------------------------
+//switch case
+pay= "UPI";
+
+switch(pay){
+    case "wallet":
+        document.write("selected1:"+ pay);
+        break;
+    case "UPI" :
+        document.write("selected2:"+ pay);
+        break;
+    case "credit card":
+        document.write("selected3:"+pay);
+        break;
+    default:
+        document.write("Error");
+
+} 
+
+
+

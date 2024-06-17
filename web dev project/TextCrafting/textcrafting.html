@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Crafting</title>
+</head>
+
+<body>
+    <script>
+        do {
+            // Get user input
+            let userInput = prompt("Enter a string:").toLowerCase();
+            let transform = prompt("What would you like to do with this string\n (Reverse, Capital, Size, Search, Repeat)?").toLowerCase();
+            console.log(userInput)
+
+            // Perform the selected transformation on the user input
+            switch (transform) {
+                case "reverse":
+                    let reversedString = userInput.split("").reverse().join("");  //split the given letter , reverse it and then join agian
+                    console.log(`Reversed String: ${reversedString}`);  //-----use backtick-----
+                    
+                    // console.log("Reversed String: " + reversedString + " string reverse " + reversedString);
+                    // console.log(`Reversed String: ${reversedString} string reverse ${reversedString}`);
+                    break;
+
+                case "capital":
+                    let capitalizedString = userInput.toUpperCase();    // convert into Capital Letter
+                    console.log(`Capitalized Words: ${capitalizedString}`);
+                    break;
+                case "size":
+                    let stringSize = userInput.length;   // find the length of string
+                    console.log(`Size of String: ${stringSize}`);
+                    break;
+                case "search":
+                    let searchString = prompt('Search string or word').toLowerCase();   // convert given string into smaller letter
+                    let isFound = userInput.includes(searchString);   // search the letter or word exist in given string [return (boolean value)]
+                    console.log(`${searchString} ? : ${isFound}`);
+
+                    break;
+                case "repeat":
+                    let repeatCount = prompt('How many times do you want to repeat the string?');
+                    let repeatedString = userInput.repeat(repeatCount);    // repeat the string no.of times
+                    console.log(`Repeated String: ${repeatedString}`);
+                    break;
+                default:
+                    console.log(`Please choose a correct option.`);
+                    break;
+            }
+
+            var loop = parseInt(prompt(`Do You Want to Perform Another Operation on the string? (1. Yes / 0. No)`));
+        } while (loop > 0)
+    </script>
+</body>
+
+</html>

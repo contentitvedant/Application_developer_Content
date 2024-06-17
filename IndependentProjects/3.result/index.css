@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ojuju:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap");
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+table {
+  width: 50%;
+  margin: auto;
+  border-collapse: collapse;
+
+}
+
+header {
+  font-family: "Russo One", sans-serif;
+  text-align: center;
+  letter-spacing: 5px;
+  color: rgb(214, 183, 7);
+}
+h1{
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.logo {
+  height: 150px;
+  width: 150px;
+}
+
+/* table { 
+   border-collapse: collapse; 
+  width: 100%; 
+   margin: 100px; 
+/* } */
+
+.midRow,th {
+  background-color: rgba(8, 8, 8, 0.744);
+  color: #fff;
+}
+th,td{
+  padding: 10px;
+}

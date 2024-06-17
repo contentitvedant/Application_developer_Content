@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+let batsman = ["Ambati Rayudu",    "Shardul Thakur","Trent Boult",
+        "Ishan Kishan",  "Adam Milne"
+    ]
+let bowler = ["Adam Milne",
+    "Jayant Yadav","Shardul Thakur",    "Krunal Pandya",    "Nathan Coulter-Nile",
+
+]
+let wc = ["MS Dhoni"]
+
+// Display my team
+//concat method
+my_team = [batsman + bowler + wc] //first method
+my_team = batsman.concat(bowler).concat(wc) //second method
+
+console.log(my_team)
+
+
+console.log(my_team.sort()) // Display sorted player  list.
+console.log(my_team.reverse())// Display player name in reverse order array
+
+
+
+
+
+//slice method  return new array
+console.log(batsman.slice(1,3))
+// return value in array start position 1 to 3 index position
+
+
+//update team 
+
+//splice method change the original array
+//remove elements from array start index position 1 to 3 then add new elements between them
+batsman.splice(1,3,"Adam Milne","Jayant Yadav","Anmolpreet Singh","Mohsin Khan",)
+console.log("Splice  array : " + batsman)
+
+batsman.splice(0)//remove all player from batsman team
+
+
+//remove last player from bowler
+console.log(bowler.pop())
+
+//remove first player from bowler
+console.log(bowler.shift())
+
+
+
+
+//Ambati Rayadu not play replace them with Ruturaj Gaikwad 
+let index = batsman.indexOf("Ambati Rayudu") // if value is not find them it return -1
+console.log(index)
+batsman[index]="Ruturaj Gaikwad"
+
+//return string and join method does not change original array.
+console.log(batsman.join())
+
+console.log(batsman.join("|"))   
+
+
+//delete method
+delete batsman[1] //it show emppty space in array
+
+// -------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+</script>
+
+
+</html>

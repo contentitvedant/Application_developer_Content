@@ -20,12 +20,14 @@ let RTORecords = {
   
 };
 
-// concept applied computed properties and short hand properties 
+
+
+  
+// concept applied computed properties
+//  and short hand properties 
 function addNewVehicle() {
   console.log("Enter details of the new vehicle:");
   const numberPlate = readlineSync.question("Number Plate: ");
-  // Check if the number plate already exists in the records
-  //also applied the object property which return booleans by checking the property exists or not
   if (RTORecords.hasOwnProperty(numberPlate)) {
     console.log(
       "vehicle already exist ! "
@@ -179,6 +181,18 @@ while (true) {
     console.log("Invalid choice. Please enter a valid option.");
   }
  }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

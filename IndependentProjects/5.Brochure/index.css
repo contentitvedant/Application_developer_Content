@@ -1,0 +1,122 @@
+
+ 
+body{
+    background-image: url("https://itv-contentbucket.s3.ap-south-1.amazonaws.com/Web+Development+Assets/Brochure/123+(1).png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    background-attachment: fixed;
+    }
+  header {
+    background-color: transparent;
+    padding: 30px;
+    background-image: url("https://itv-contentbucket.s3.ap-south-1.amazonaws.com/Web+Development+Assets/Brochure/ITV_logo.png");
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .navLogo {
+    margin-left: 14px;
+  }
+  
+  .navButton{
+    float: inline-end;
+    margin-right: 50px;
+    border-radius: 25px;
+    padding: 15px;
+    border: #fbfbfb 1px solid;
+    background-color: #b9d719;
+    color: #f9fbfc;
+    font-weight: 700;
+  }
+  .contentHeading{
+    text-align: center;
+    margin: 20px;
+    color: rgb(10, 10, 10);
+    padding: 10px;
+    text-shadow: 0px 0px 5px rgb(103, 104, 103);
+    background-color: #d3f70a;
+    position: sticky;
+  
+  }
+  
+  section {
+    display: inline-block;
+    width: 25%;
+    height: 300px;
+    border: 1px solid #c8cacc;
+    margin: 40px;
+    padding: 10px;
+    text-align: center;
+    background:linear-gradient(0deg, #E3E3E3 0%,#9ea2a7 100%);
+  
+    img {
+      margin: 5px;
+      padding: 20px;
+      border-radius: 100%;
+      background-color: white;
+      box-shadow: 0px 0px 5px 3px rgb(3, 3, 3);
+    }
+  }
+  
+  /* --------------------------------------------------------------------------------------------------------- */
+  
+  .card {
+    padding: 30px;
+    border: 2px solid rgb(230, 224, 224);
+    height: 150vh;
+    background-color: #cfd6d6;
+    color: rgb(37, 36, 36);
+  }
+  
+  .img1 {
+    float: right;
+    margin-right: 10vh;
+    margin-left: 10vh;
+  }
+  
+  .course-info {
+    padding: 20px;
+    font-size: 25px;
+  }
+  .course-heading {
+    font-size: 35px;
+    text-decoration: underline;
+    margin-left: 30px;
+  }
+  
+  nav{
+    position: sticky;
+    top: 0%;
+  }
+  
+  .whatsapp{
+    width: 150px;
+    height: 100px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+  }
+  
+  
+  
+  .new{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    background-color: red;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    border-bottom-left-radius: 10px;
+    color: whitesmoke;
+    
+  } 
+  
+  
+  
+  
+  

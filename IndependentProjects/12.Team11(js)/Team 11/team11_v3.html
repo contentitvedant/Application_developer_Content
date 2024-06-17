@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+
+// -------------------------------------------------------------------------------------------------
+//Using map function
+let batsman = ["Ambati Rayudu", "Shardul Thakur", "Trent Boult", "Ishan Kishan",     "Adam Milne",
+];
+let bowler = ["Adam Milne",
+    "Jayant Yadav","Shardul Thakur",    "Krunal Pandya",    "Nathan Coulter-Nile",
+
+]
+let wc = ["MS Dhoni"]
+
+let sr = [134, 130, 120, 111, 124];
+
+let bats = batsman.map((player, index) => [player, sr[index]]);
+
+console.log(bats);
+
+//display player name which runrate more than 120
+
+let bat_filt = bats.filter((player) => player[1] > 120); // Filter only players with sr > 120
+console.log(bat_filt)
+
+
+//Display unique player name from my array
+
+let combined = batsman.concat(bowler, wc);
+
+let uniquePlayers = combined.reduce((acc, player) => {
+    if (!acc.includes(player)) {
+        acc.push(player);
+    }
+    return acc;
+}, []);
+
+console.log(uniquePlayers);
+
+//spread operator
+const all_player= [...batsman,...bowler,...wc]
+console.log(all_player)
+
+
+
+//rest operator
+function newBowlers(newBowler, ...existingBowlers) {
+    let allBowlers = [...existingBowlers,newBowler];
+    for (let bowler of allBowlers) {
+        console.log(bowler);
+    }
+}
+
+newBowlers("Trent Boult", ...bowler);
+
+
+//array destructor : array value stored in seperate variable 
+
+let [player1,player2,player3,player4,player5]= batsman 
+
+console.log(player1,player2,player3,player4,player5)
+
+
+</script>
+
+
+</html>

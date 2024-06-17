@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Crafting V2</title>
+</head>
+<body>
+    <script>
+        const str = "String Chain";
+        console.log(str.split("")); // Convert the string into an array or fetch a specific character by adding quotation marks ""
+
+        // CharAt
+        console.log('CharAt : ' + str.charAt(2)); // Fetch the character at a specific index value
+
+        // IndexOf
+        console.log('IndexOf : ' + str.indexOf("Chain")); // Fetch the index value of the initial position of a word
+
+        // Substring
+        console.log('Substring : ' + str.substring(0, 6)); // Extract a substring based on start and end positions
+        console.log('Substring : ' + str.substring(7)); // If the end position is omitted, substring() will slice out the rest of the string.
+
+        // Substr
+        console.log('Substr : ' + str.substr(2, 6)); // Extract a substring starting from a specific index with a defined length
+
+        // Replace
+        console.log('Replace : ' + str.replace("Chain", "Index")); // Replace a specific word or character in the string
+
+        // concat
+        console.log(str.concat(" ","Manipulation"));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Hd images are imported from wallpapercave.com. -->
+    <title>Bootstrap Project</title>
+    <!-- icon  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- bootstrap cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- step 1 : {Open Bootstrap Doc and search navbar and scroll to last and pick last navber with dark theme [ Navbar section] (Edit tags according to Your needs)} -->
+    <!-- navbar section  -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Animeverse</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <!-- logo  -->
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                        Animeverse
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <!-- sidebar -->
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="anime1.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Anime</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="AnimeV4.html">Help</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section>
+        <div class="container-lg shadow-lg p-5 blury bg-dark">
+            <h1 class="text-center mb-5">--Contact Us--</h1>
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-lg-6">
+                    <div class="bg-white cards"><img src="https://wallpapercave.com/wp/wp10169815.png"
+                            style="height: 400px;" alt=""></div>
+                </div>
+                <div class="col-sm-4 col-lg-4">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Name</label>
+                            <input type="text" class="form-control p-2" id="Name" placeholder="Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Email</label>
+                            <input type="email" class="form-control p-2" id="anime@gmail.com"
+                                placeholder="animeverse@gmail.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Comments</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                        </div>
+                        <button class="btn btn-primary" type="button">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Modal -->
+    <div class="modal fade text-black" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Coming soon..</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-primary">
+                    New features will unlock soon!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="text-center m-5">
+        <a class="nav-link mb-3 hov" aria-current="page" href="#"><i class="bi bi-arrow-up-circle"></i></a>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link text-white hov"  data-bs-toggle="modal"  data-bs-target="#exampleModal" href="#">A-Z List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white hov "  data-bs-toggle="modal"  data-bs-target="#exampleModal" href="#">Recently Added</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white hov"  data-bs-toggle="modal"  data-bs-target="#exampleModal" href="#">Upcoming</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white hov"  data-bs-toggle="modal"  data-bs-target="#exampleModal" href="#">Most Watch</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white hov"  data-bs-toggle="modal"  data-bs-target="#exampleModal" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white hov" href="#">Contact</a>
+            </li>
+        </ul>
+        <div class="card-body">
+            <h5 class="card-title text-danger my-3">---AnimeVerse---</h5>
+            <p class="card-text ">Copyright © Animeverse.to. All Rights Reserved</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
