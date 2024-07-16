@@ -1,7 +1,7 @@
 // Coming soon setIntervel
 function time(){
   
-  const futureDate = new Date('2024-06-18T00:00:00');
+  const futureDate = new Date('2024-06-23T00:00:00');
   const timeDiff = futureDate - Date.now();
 
   // The padStart() method pads a string with another string (multiple times) until it reaches a given length.
