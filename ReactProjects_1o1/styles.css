@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #bb1919;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    flex-grow: 1;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+header nav {
+    flex-grow: 3;
+    text-align: right;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.headline {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.headline img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.headline h2 {
+    margin-top: 0;
+    color: #bb1919;
+    font-size: 28px;
+}
+
+.headline p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.news-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.news-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.news-item h3 {
+    margin-top: 0;
+    color: #bb1919;
+    font-size: 22px;
+}
+
+.news-item p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.news-item.large {
+    flex: 1 1 100%;
+}
+
+.news-item.medium {
+    flex: 1 1 calc(50% - 20px);
+}
+
+.news-item.small {
+    flex: 1 1 calc(33.33% - 20px);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}

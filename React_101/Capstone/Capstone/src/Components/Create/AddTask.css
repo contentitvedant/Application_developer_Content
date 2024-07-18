@@ -1,0 +1,157 @@
+:root {
+  /* Colors */
+  --background-color: #EBECF0;
+  --text-color-light: #BABECC;
+  --text-color-button: #61677C;
+  --text-color-red: #AE1100;
+  --shadow-color-light: #FFF;
+  --shadow-color-dark: #BABECC;
+
+  /* Fonts */
+  --font-family-default: 'Montserrat', sans-serif;
+  --font-size-default: 16px;
+  --letter-spacing-default: -0.2px;
+  --font-weight-bold: bold;
+  --font-weight-semi-bold: 600;
+
+  /* Spacing */
+  --padding-small: 8px; /* 16px / 2 */
+  --padding-default: 16px;
+  --padding-large: 32px; /* 16px * 2 */
+  --margin-bottom-large: 24px; /* 16px * 1.5 */
+  --radius-default: 320px; /* 16px * 20 */
+  --radius-small: 8px; /* 16px / 2 */
+
+  /* Box Shadows */
+  --box-shadow-input: inset 2px 2px 5px var(--shadow-color-dark), inset -5px -5px 10px var(--shadow-color-light);
+  --box-shadow-input-focus: inset 1px 1px 2px var(--shadow-color-dark), inset -1px -1px 2px var(--shadow-color-light);
+  --box-shadow-button: -5px -5px 20px var(--shadow-color-light), 5px 5px 20px var(--shadow-color-dark);
+  --box-shadow-button-hover: -2px -2px 5px var(--shadow-color-light), 2px 2px 5px var(--shadow-color-dark);
+  --box-shadow-button-active: inset 1px 1px 2px var(--shadow-color-dark), inset -1px -1px 2px var(--shadow-color-light);
+}
+
+/* Background and Typography */
+.page-background {
+  background-color: var(--background-color);
+}
+
+.default-font {
+  font-family: var(--font-family-default);
+  letter-spacing: var(--letter-spacing-default);
+  font-size: var(--font-size-default);
+}
+
+.light-text {
+  color: var(--text-color-light);
+  text-shadow: 1px 1px 1px var(--shadow-color-light);
+}
+
+/* Form Layout */
+.form-container {
+  padding: var(--padding-default);
+  width: calc(var(--padding-default) * 20);
+  margin: 0 auto;
+}
+
+.form-segment {
+  /* padding: var(--padding-large) 0; */
+  text-align: center;
+}
+
+/* Inputs and Buttons */
+.input-element, .button-element {
+  border: 0;
+  outline: 0;
+  font-size: var(--font-size-default);
+  border-radius: var(--radius-default);
+  padding: var(--padding-default);
+  background-color: var(--background-color);
+  text-shadow: 1px 1px 0 var(--shadow-color-light);
+}
+
+.label-element {
+  display: block;
+  margin-bottom: var(--margin-bottom-large);
+  width: 100%;
+}
+
+.input-element {
+  margin-right: var(--padding-small);
+  box-shadow: var(--box-shadow-input);
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.input-element:focus {
+  box-shadow: var(--box-shadow-input-focus);
+}
+
+/* Buttons */
+.button-element {
+  color: var(--text-color-button);
+  font-weight: var(--font-weight-bold);
+  box-shadow: var(--box-shadow-button);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.button-element:hover {
+  box-shadow: var(--box-shadow-button-hover);
+}
+
+.button-element:active {
+  box-shadow: var(--box-shadow-button-active);
+}
+
+.button-icon {
+  margin-right: var(--padding-small);
+}
+
+.button-unit {
+  background-color: #EBECF0;
+  box-shadow: -8px -8px 30px #FFF, 8px 8px 30px #BABECC;
+  border-radius: 10px;
+  width: calc(var(--padding-default) * 3);
+  height: calc(var(--padding-default) * 3);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #61677C;
+    border:#777;margin:10px;
+  /* margin: 0 var(--padding-small); */
+  font-size: calc(var(--font-size-default) * 1.2);
+}
+
+.button-unit .button-icon {
+  margin-right: 0;
+}
+
+.button-unit:hover {
+  box-shadow: -4px -4px 10px #FFF, 4px 4px 10px #BABECC;
+}
+
+.button-icon:hover {
+  box-shadow: var(--box-shadow-button-hover);
+}
+
+.button-red {
+  display: block;
+  width: 100%;
+  color: var(--text-color-red);
+}
+
+/* Input Group */
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.input-group .label-element {
+  margin: 0;
+  flex: 1;
+}

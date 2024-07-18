@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Webkit browsers */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #0e0d0d; 
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #020202 #3b3a3a;
+  }
+  
+  /* Edge, IE */
+  * {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    
+  }
+  

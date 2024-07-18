@@ -1,0 +1,26 @@
+.nav-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+
+    background-color: #EBECF0;
+    box-shadow: -8px -8px 30px #FFF, 8px 8px 30px #BABECC;
+    border-radius: 10px;
+    height: 4rem;
+    width: 8rem;
+    color: #61677C;
+    border:#777;margin:10px;
+    font-size: 24px;
+    
+}
+.img-container:hover {
+    box-shadow: -4px -4px 10px #FFF, 4px 4px 10px #BABECC;
+}

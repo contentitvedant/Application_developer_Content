@@ -1,0 +1,103 @@
+.task-list-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 32px;
+    background-color: #EBECF0;
+}
+
+.task-card {
+    background-color: #EBECF0;
+    box-shadow: -8px -8px 30px #FFF, 8px 8px 30px #BABECC;
+    border-radius: 20px;
+    padding: 24px;
+    margin: 24px;
+    width: 300px; /* Increased width */
+    height: auto; /* Allows the height to adjust */
+    max-height: 600px; /* Maximum height for the card */
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    color: #61677C;
+    position: relative;
+    overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+.task-card:hover {
+    box-shadow: -4px -4px 10px #FFF, 4px 4px 10px #BABECC;
+}
+
+.task-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #333;
+    word-wrap: break-word; /* Ensures long words break into the next line */
+}
+
+.task-info {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #555;
+    line-height: 1.6;
+    word-wrap: break-word; /* Ensures long words break into the next line */
+    overflow-y: auto; /* Adds a scrollbar if content overflows vertically */
+    max-height: 400px; /* Limits the height of the info section */
+}
+
+.task-date {
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    font-size: 16px;
+    font-style: italic;
+    color: #777;
+}
+
+.delete-btn{
+    background-color: #EBECF0;
+    box-shadow: -8px -8px 30px #FFF, 8px 8px 30px #BABECC;
+    border-radius: 10px;
+    height: 2rem;
+    width: 2rem;
+    color: #61677C;
+    border:#777;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    
+    
+}
+.delete-btn:hover {
+    box-shadow: -4px -4px 10px #FFF, 4px 4px 10px #BABECC;
+}
+.update-btn{
+    background-color: #EBECF0;
+    box-shadow: -8px -8px 30px #FFF, 8px 8px 30px #BABECC;
+    border-radius: 10px;
+    height: 2rem;
+    width: 2rem;
+    color: #61677C;
+    border:#777;
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+    
+    
+}
+.update-btn:hover {
+    box-shadow: -4px -4px 10px #FFF, 4px 4px 10px #BABECC;
+}
+
+.add-btn{
+    background-color: #EBECF0;
+    box-shadow: -8px -8px 30px #FFF, 8px 8px 30px #BABECC;
+    border-radius: 10px;
+    height: 4rem;
+    width: 4rem;
+    color: #61677C;
+    border:#777;margin:10px;
+}
+
+.add-btn:hover {
+    box-shadow: -4px -4px 10px #FFF, 4px 4px 10px #BABECC;
+}
